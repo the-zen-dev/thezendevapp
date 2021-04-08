@@ -1,0 +1,86 @@
+:root {
+  --lemon-meringue: #f1e7bd;
+  --deep-space-sparkle: #476a6f;
+  --hookers-green: #396f63;
+  --sugar-plum: #885374;
+  --rust: #b24115;
+  --oxford-blue: #000037;
+}
+p {
+  color: var(--lemon-meringue);
+  text-align: center;
+}
+body {
+  background-color: var(--deep-space-sparkle);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  max-height: 50vh;
+  margin: 0 auto;
+  display: block;
+}
+
+.guided-meditation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.other-topics {
+  display: flex;
+  justify-content: center;
+}
+.other-topics > a {
+  color: var(--lemon-meringue);
+  margin: 1rem;
+}
+
+#play {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.stroke-dotted {
+  opacity: 0;
+  stroke-dasharray: 4,5;
+  stroke-width: 1px;
+  transform-origin: 50% 50%;
+  animation: spin 8s infinite linear;
+  transition: opacity 1s ease,
+              stroke-width 1s ease;
+}
+.stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dashArray: 300;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 1s ease,
+              opacity 1s ease;
+}
+
+.icon {
+  transform-origin: 50% 50%;
+  transition: transform 200ms ease-out;
+}
+
+/* Hover */
+#play:hover > svg > .stroke-dotted {
+  stroke-width: 4px;
+  opacity: 1;
+}
+
+#play:hover > svg > .stroke-solid {
+  opacity: 0;
+  stroke-dashoffset: 300;
+}
+
+#play:hover > svg > .icon {
+  transform: scale(1.05);
+}
