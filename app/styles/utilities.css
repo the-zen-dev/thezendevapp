@@ -2,7 +2,7 @@
   --lemon-meringue: #f1e7bd;
   --deep-space-sparkle: #476a6f;
   --hookers-green: #396f63;
-  --sugar-plum: #885374;
+  --sugar-plum: #aa7e99;
   --rust: #b24115;
   --oxford-blue: #000037;
 }
@@ -12,13 +12,3 @@ body {
   color: var(--lemon-meringue);
 }
 
-
-
-.emoji {
-  @apply mr-1;
-}
-.border-dev {
-  @apply border-solid;
-  @apply border;
-  @apply border-blue-700;
-}

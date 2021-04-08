@@ -20,6 +20,10 @@ p {
   @apply py-2;
 }
 
+.emoji {
+  @apply mr-1;
+}
+
 
 /* play icon */
 .icon-play {
