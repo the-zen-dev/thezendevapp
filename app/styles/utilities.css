@@ -10,5 +10,6 @@
 body {
   background-color: var(--deep-space-sparkle);
   color: var(--lemon-meringue);
+  font-family: 'Merienda', cursive;
 }
 
