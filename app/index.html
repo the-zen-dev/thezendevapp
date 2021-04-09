@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Thezendevapp</title>
+    <title>The Zen Dev: Guided Meditation for Web Developers</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta property="og:title" content="The Zen Dev">
+    <meta property="og:description" content="Guided Meditations for Web Developers">
+    <meta property="og:image" content="{{rootURL}}assets/images/logo.png">
+    <meta property="og:url" content="{{rootURL}}assets/images/thezendev-summary-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="A developer sits in a meditative position with a laptop on their lap">
 
     {{content-for "head"}}
 
@@ -14,7 +20,7 @@
 
     {{content-for "head-footer"}}
   </head>
-  <body>
+  <body class="min-h-screen">
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
