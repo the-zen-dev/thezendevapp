@@ -1,8 +1,8 @@
 # thezendevapp
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7442467-a3d9-4762-be34-8167aa8f5878/deploy-status)](https://app.netlify.com/sites/the-zen-dev/deploys)
 
+The Zen Dev is a project to bring more zen to the life of all developers.
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

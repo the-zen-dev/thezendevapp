@@ -1,15 +1,23 @@
-main {
+main.homepage {
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 3em;
+}
+.container-homepage-links {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  max-width: 768px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 h1 {
   @apply text-5xl;
   line-height: 1;
   @apply text-center;
-  @apply font-serif;
   @apply mt-8;
   @apply mb-0;
 }
@@ -20,11 +28,20 @@ p {
   @apply py-2;
 }
 
-.emoji {
-  @apply mr-1;
+/* article styling */
+.article-text {
+  @apply pt-3;
 }
-
-
+.article-text p {
+  @apply font-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.article-author {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 /* play icon */
 .icon-play {
   cursor: pointer;
