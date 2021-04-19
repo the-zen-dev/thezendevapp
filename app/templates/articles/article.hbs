@@ -1,0 +1,42 @@
+{{page-title @model.title}}
+<PrimaryNav/>
+<div class="py-10">
+  <header>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="mb-3 text-yellow-100" id="article-title">
+        {{@model.title}}
+      </h1>
+    </div>
+  </header>
+  <main class="min-h-screen">
+
+    <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+      <div class="relative">
+        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+          <div class="w-full border-t border-yellow-100"></div>
+        </div>
+        <div class="relative flex justify-center">
+          <span class="px-3 text-lg font-medium text-yellow-100 author-separator article-author">
+            by
+            {{#each @model.authors as |authorinfo|}}
+              {{#if authorinfo.url}}
+                <a href="{{authorinfo.url}}" rel="external" class="underline focus:text-yellow-400">
+                  {{authorinfo.first}} {{authorinfo.last}}
+                </a>
+              {{else}}
+                {{authorinfo.first}} {{authorinfo.last}}
+              {{/if}}
+            {{/each}}
+          </span>
+        </div>
+      </div>
+      <article aria-labelledby="article-title" class="text-yellow-50 article-text">
+      {{!-- template-lint-disable no-triple-curlies --}}
+      {{{@model.html}}}
+      {{!-- template-lint-enable no-triple-curlies --}}
+      <div class="text-sm pt-4">~ Published on {{@model.created}}</div>
+      <div class="text-sm pt-2">Photo Credit: <a href="{{@model.unsplashurl}}" rel="external" class="underline border-transparent text-yellow-100 hover:border-yellow-300 hover:text-yellow-300">{{@model.unsplashtext}}</a>.</div>
+      </article>
+    </div>
+  </main>
+</div>
