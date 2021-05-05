@@ -31,16 +31,16 @@
     "autoprefixer": "10.2.5",
     "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
-    "broccoli-static-site-json": "^4.3.0",
+    "broccoli-static-site-json": "4.3.0",
     "ember-auto-import": "1.11.2",
     "ember-cli": "3.26.0",
     "ember-cli-app-version": "5.0.0",
     "ember-cli-babel": "7.26.3",
     "ember-cli-dependency-checker": "3.2.0",
-    "ember-cli-fastboot": "^2.2.3",
+    "ember-cli-fastboot": "2.2.3",
     "ember-cli-htmlbars": "5.7.1",
     "ember-cli-inject-live-reload": "2.0.2",
-    "ember-cli-netlify": "^0.4.1",
+    "ember-cli-netlify": "0.4.1",
     "ember-cli-postcss": "7.0.0",
     "ember-cli-sri": "2.1.1",
     "ember-cli-terser": "4.0.1",
@@ -63,8 +63,8 @@
     "loader.js": "4.7.0",
     "npm-run-all": "4.1.5",
     "postcss-import": "14.0.1",
-    "prember": "^1.0.5",
-    "prember-middleware": "^0.1.0",
+    "prember": "1.0.5",
+    "prember-middleware": "0.1.0",
     "prettier": "2.2.1",
     "qunit": "2.15.0",
     "qunit-dom": "1.6.0",
@@ -82,6 +82,6 @@
     ]
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.2.0"
+    "@tailwindcss/aspect-ratio": "0.2.0"
   }
 }
