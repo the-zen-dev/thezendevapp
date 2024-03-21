@@ -28,7 +28,7 @@
     "@fullhuman/postcss-purgecss": "4.0.3",
     "@glimmer/component": "1.0.4",
     "@glimmer/tracking": "1.0.4",
-    "autoprefixer": "10.2.5",
+    "autoprefixer": "10.4.19",
     "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
     "broccoli-static-site-json": "4.3.0",
